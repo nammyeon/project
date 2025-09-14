@@ -1,0 +1,31 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<div id="work" class="area-wrap">
+    <h2 class="page-title">Work</h2>
+    <div class="work__content" module="product_listnormal">
+        <!-- 
+            $cate_no = 42
+            $count = 999
+        -->
+        <ul class="work__list">
+            <li class="work__item" id="anchorBoxId_{$product_no}">
+                <a href="/work/detail/index.html{$param}">
+                    <figure class="work__item-image"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /></figure>
+                    <div class="work__item-text">
+                        <span>{$custom_option1}</span>
+                        <p>{$product_name|striptag}</p>
+                    </div>
+                </a>
+            </li>
+            <li class="work__item" id="anchorBoxId_{$product_no}">
+                <a href="/work/detail/index.html{$param}">
+                    <figure class="work__item-image"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" /></figure>
+                    <div class="work__item-text">
+                        <span>{$custom_option1}</span>
+                        <p>{$product_name|striptag}</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

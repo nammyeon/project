@@ -1,0 +1,9 @@
+/* xans-layout-regulardelivery */
+.xans-layout-regulardelivery .ec-base-layer { top:150px; width:520px; left:50%; margin: 0 0 0 -170px; text-align:left;}
+.xans-layout-regulardelivery .ec-base-layer.sizeS { width: 430px }
+.xans-layout-regulardelivery .content { padding: 14px;}
+.xans-layout-regulardelivery .content .payList li{ padding: 12px;border: 1px solid #D6DAE1;border-radius: 4px;margin-top:12px;background-color: #fff; cursor: pointer;}
+.xans-layout-regulardelivery .content .payList li:first-child{margin-top:0;}
+.xans-layout-regulardelivery .content .payList li span{ display: inline-block; margin: 2px 0 2px 8px; vertical-align: top; font-size: 13px; line-height: 1.5; color:#1B1E26; letter-spacing: -1px;}
+.xans-layout-regulardelivery .content .payList li:hover{ background-color: #F4F9FF;}
+.xans-layout-regulardelivery .content > p { padding-left: 5px; }

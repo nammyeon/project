@@ -1,0 +1,1 @@
+/home/12r/program/resource/protected/order/ec_orderform/pc/ko_KR/js/auto_resize.js

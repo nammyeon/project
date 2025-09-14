@@ -1,0 +1,45 @@
+body {min-height: 100vh;background: var(--color-bg); color: var(--color-text); transition: opacity 0.2s ease-out;}
+
+
+
+/* 
+    barba 전환 이펙트 설정 (스크롤방지)
+*/
+body.barba-transitioning {max-height: 100vh;overflow: hidden;}
+
+
+/* 
+    기본값 설정
+*/
+.page-title {font-size: 80rem;font-weight: 700; font-family: var(--font-point);margin-bottom: 60rem;}
+.btn-normal {display: block; position: relative;width: 240rem;line-height: 56rem; padding: 0 25rem;border: 2rem solid var(--color-primary);border-radius: 8rem;background: var(--color-primary);font-size: 15rem;transition: .4s;}
+.btn-normal > span {position: absolute;top: 50%;right: 27rem;transform: translateY(-50%);transition: .4s;}
+.btn-normal > span > svg {width: 25rem;stroke: #fff;transition: .4s;}
+.btn-normal.btn-normal--gray {border-color: #555;background: #555;}
+@media all and (min-width:1024px) {
+    .btn-normal:hover {background: none;}
+    .btn-normal:hover > span {right: 22rem;}
+}
+@media all and (max-width:660px) {
+    .page-title {font-size: 40rem;margin-bottom: 30rem;}
+    .btn-normal {width: 200rem;line-height: 45rem;padding: 0 15rem; border-radius: 5rem;font-size: 13rem;}
+    .btn-normal > span {right: 15rem;}
+}
+
+/* 프로젝트 목록 공통 */
+.work__item {border-radius: var(--border-radius-normal);overflow: hidden;}
+.work__item > a {display: block;position: relative;}
+.work__item-image {position: relative;}
+.work__item-image:after {content: "";display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: linear-gradient(0deg,rgba(0, 0, 0, .65) 0%, rgba(255, 255, 255, 0) 100%);}
+.work__item-image > img {width: 100%;transition: .4s;}
+.work__item:hover .work__item-image > img {transform: scale(1.05);}
+.work__item-text {position: absolute;width: 100%;left: 0;bottom: 0;padding: 30rem 30rem;}
+.work__item-text > span {display: block; margin-bottom: 15rem;font-size: 15rem;color: #eee;}
+.work__item-text > p {font-size: 17rem;}
+
+@media all and (max-width:660px) {
+    .work__item {margin-bottom: 15rem;}
+    .work__item-text {padding: 20rem 20rem;}
+    .work__item-text > span {margin-bottom: 10rem;;font-size: 12rem;}
+    .work__item-text > p { font-size: 14rem;}
+}

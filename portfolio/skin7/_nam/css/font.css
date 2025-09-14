@@ -1,0 +1,107 @@
+:root {
+    --font-normal: 'Pretendard', sans-serif;
+    --font-point: 'D2Coding', sans-serif;
+}
+
+
+
+
+
+
+/* 국문폰트: 프리텐다드 Pretendard */
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/font/pretendard/Pretendard-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/font/pretendard/Pretendard-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/font/pretendard/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/font/pretendard/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/font/pretendard/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/font/pretendard/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/font/pretendard/Pretendard-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/font/pretendard/Pretendard-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/font/pretendard/Pretendard-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+/* 포인트폰트: D2Coding */
+@font-face {
+    font-family: 'D2Coding';
+    src: url('/font/d2coding/D2Coding.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'D2Coding';
+    src: url('/font/d2coding/D2CodingBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+/* px to rem */
+@media (max-width: 1920px) {
+    html {font-size: 0.052083vw;}
+}
+
+
+@media (max-width: 1480px) {
+    html { font-size: 0.0675675675675676vw; }
+}
+@media (max-width: 1023px) {
+    html {font-size: 0.09775171065493645vw; }
+}
+
+@media (max-width: 860px) {
+    html { font-size: 0.13020833333333335vw }
+}
+
+@media (max-width: 660px) {
+    html { font-size: 0.15151515151515152vw; }
+}
+@media (max-width: 540px) {
+    html { font-size: 0.26666666666666666vw }
+}

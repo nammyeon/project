@@ -1,0 +1,38 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<div id="main" class="area-wrap">
+    <section class="main__intro">
+        <figure><img src="/_nam/images/icon_me_hi.png" alt="me say hi" /></figure>
+        <div>
+            <p>안녕하세요, 김남연입니다.</p>
+            <p>아이디어를 담아 웹을 만듭니다.</p>
+            <p>상상을 웹으로 구현합니다.</p>
+        </div>
+    </section>
+
+    <section class="main__work" module="product_listmain_1">
+        <!--
+                $count = 6
+            -->
+        <ul class="work__list">
+            <li class="work__item" id="anchorBoxId_{$product_no}">
+                <a href="/work/detail/index.html{$param}">
+                    <figure class="work__item-image"><img src="{$image_big}" id="{$image_big_id}" alt="{$seo_alt_tag}" /></figure>
+                    <div class="work__item-text">
+                        <span>{$custom_option1}</span>
+                        <p>{$product_name|striptag}</p>
+                    </div>
+                </a>
+            </li>
+            <li class="work__item" id="anchorBoxId_{$product_no}">
+                <a href="/work/detail/index.html{$param}">
+                    <figure class="work__item-image"><img src="{$image_big}" id="{$image_big_id}" alt="{$seo_alt_tag}" /></figure>
+                    <div class="work__item-text">
+                        <span>{$custom_option1}</span>
+                        <p>{$product_name|striptag}</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+</div>

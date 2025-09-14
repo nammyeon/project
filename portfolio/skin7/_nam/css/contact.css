@@ -1,0 +1,12 @@
+#contact {}
+.contact__content {}
+.contact__text {margin-bottom: 30rem;;font-size: 17rem;line-height: 1.77;}
+.contact__text > p {}
+.contact__image {margin-top: 60rem;border-radius: var(--border-radius-normal);overflow: hidden;}
+.contact__image > img {width: 100%;}
+
+@media all and (max-width:660px) {
+    .contact__text {font-size: 14rem;}
+    .contact__image {margin-top: 40rem;}
+    .contact__text {margin-bottom: 20rem;}
+}

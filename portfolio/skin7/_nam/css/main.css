@@ -1,0 +1,20 @@
+#main {}
+
+.main__intro {display: flex;align-items: flex-end;gap: 25rem;margin-bottom: 60rem;padding-bottom: 60rem;border-bottom: 1rem solid var(--color-line);}
+.main__intro > figure {width: 110rem;}
+.main__intro > figure > img {width: 100%;}
+.main__intro > div {}
+.main__intro > div > p {font-size: 17rem;line-height: 1.77;}
+
+.main__work {}
+.main__work .work__list {grid-template-columns: repeat(1, minmax(0, 1fr));}
+.main__work .work__item {}
+.main__work .work__item .work__item-image > img {height: 310rem;object-fit: cover;}
+
+
+@media all and (max-width:660px) {
+    .main__intro {gap: 20rem;margin-bottom: 40rem;padding-bottom: 40rem;}
+    .main__intro > figure {width: 75rem;}
+    .main__intro > div > p {font-size: 14rem;}
+    .main__work .work__item .work__item-image > img {height: 200rem;}
+}

@@ -1,0 +1,17 @@
+.imagePopup { position: fixed; top: 40%; left: 50%; z-index: 1000; width: 462px; max-height:541px; padding:47px 0px; margin: -151px 0 0 -225px; border:0; background:transparent; z-index:999;overflow:hidden;  }
+.imagePopup:before { content:''; display:block; position:fixed; left:0; top:0; width: 100vw; height:100vh; background:rgba(0,0,0,0.3); z-index:-1; }
+.imagePopup.ec-base-layer .close { right:13px;  }
+.imagePopup .prevNext { position:absolute; top:45%; left:6px; width:466px; z-index:100; }
+.imagePopup .prevNext .swiper-button-prev,
+.imagePopup .prevNext .swiper-button-next { position:absolute; width: 10px; height: 10px; margin: -3px 0 0 -3px; -webkit-transform: rotate(45deg); transform: rotate(45deg); border-bottom: 2px solid #fff; border-left: 2px solid #fff; cursor:pointer;}
+.imagePopup .prevNext .swiper-button-next { right:20px; -webkit-transform: rotate(225deg); transform: rotate(225deg);}
+.imagePopup .swiper-pagination { position:absolute; width:100%; bottom:-25px; left:30px; color:#fff; font-size:13px; text-align:center; margin-top:20px; }
+
+.imagePopup .swiper-container { position:relative; z-index: 1; width:406px; height:100%; }
+.imagePopup .swiper-wrapper { position: relative; width: 406px;  height:100%; z-index: 1; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; margin-left:30px; -webkit-transition-property: -webkit-transform; transition-property: -webkit-transform; -o-transition-property: transform; transition-property: transform;transition-property: transform,-webkit-transform; box-sizing: content-box;  }
+.imagePopup .swiper-container-android .swiper-slide,
+.imagePopup .swiper-wrapper { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+.imagePopup .swiper-slide { position: relative; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; width: 406px; height:auto; text-align: center; font-size: 18px; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center;-ms-flex-align: center; -webkit-align-items: center; align-items: center;
+  -webkit-transition-property: -webkit-transform; transition-property: -webkit-transform; -o-transition-property: transform; transition-property: transform; transition-property: transform,-webkit-transform; }
+.imagePopup .swiper-slide:before { display:block; position:absolute; left:30px; top:0; width:calc(100% - 70px); height:100%; background:#000; z-index:-1; }
+.imagePopup .swiper-slide img { display:block; height:100%; width:100%; }

@@ -1,0 +1,48 @@
+<div module="MyShop_OrderHistoryMultiinvoice" id="{$multi_invoice_layer_id}" class="ec-base-layer typeInvoice">
+    <!--@css(/layout/basic/css/ec-base-layer.css)-->
+    <!--@css(/layout/basic/css/ec-base-button.css)-->
+    <!--@css(/css/module/myshop/orderHistoryListItem.css)-->
+    <div class="header">
+        <h3>배송 정보</h3>
+    </div>
+    <div class="content">
+        <div class="ec-base-table gBorder">
+            <p>상품이 총 {$multi_invoice_count}개의 송장번호로 배송됩니다.</p>
+            <table border="1" summary="">
+                <caption>주문 상품 정보</caption>
+                <colgroup>
+                    <col style="width:200px;">
+                    <col style="width:207px;">
+                    <col style="width:auto;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">배송업체</th>
+                        <th scope="col">송장번호</th>
+                        <th scope="col">수량</th>
+                    </tr>
+                </thead>
+                <tbody module="Myshop_MultiInvoice" class="center">
+                    <tr class="xans-record-">
+                        <td>{$shipping_company}</td>
+                        <td class="number">
+                            <a href="#none" onclick="{$shipping_trace_popup}">{$invoice_no}</a>
+                        </td>
+                        <td>{$quantity}</td>
+                    </tr>
+                    <tr class="xans-record-">
+                        <td>{$shipping_company}</td>
+                        <td class="number">
+                            <a href="#none" onclick="{$shipping_trace_popup}">{$invoice_no}</a>
+                        </td>
+                        <td>{$quantity}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="ec-base-button">
+        <a href="#none" class="btnNormalFix sizeM" onclick="{$close_btn}">닫기</a>
+    </div>
+    <a href="#none" class="close" onclick="{$close_btn}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif" alt="닫기"></a>
+</div>

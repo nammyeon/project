@@ -1,0 +1,26 @@
+.regularDeliveryPayInfo { position:relative; margin:0 0 30px; }
+.regularDeliveryPayInfo > .title,
+.regularDeliveryPayInfo > div > .title{ margin:0 0 20px; font-size:12px; color:#353535; }
+.regularDeliveryPayInfo .ec-base-box .information { display: flex; align-items: baseline; }
+.regularDeliveryPayInfo .ec-base-box .information .title { height:24px; padding:0 15px 0 0; line-height:24px; font-size:12px; align-self:center; }
+.regularDeliveryPayInfo .ec-base-box .information .status { position:relative; padding:0 15px; color:#353535; }
+.regularDeliveryPayInfo .ec-base-box .information .info { padding:13px 15px 0; color:#939393; line-height:1.5; }
+.regularDeliveryPayInfo .ec-base-box .information .content { position:relative;}
+.regularDeliveryPayInfo .ec-base-box .information .content::after { content:""; position: absolute; width:1px; height:100%; top:0; left:-1px; background:#DFDFDF;}
+.regularDeliveryPayInfo .ec-base-box .button { padding:0 0 0 10px; }
+.regularDeliveryPayInfo .ec-base-box .button > .btnEm { padding:6px 10px; background:#4a5164; }
+.regularDeliveryPayInfo .ec-base-box .button > .btnNormal { padding:6px 10px; border:1px solid #b4b4b4; }
+.regularDeliveryPayInfo .ec-base-box:after { content:''; display:block; clear:both; }
+.regularDeliveryPayInfo ul { margin:10px 0 0; color:#939393; line-height:1.5; }
+.regularDeliveryPayInfo ul li { padding:0 0 0 9px; background: url(//img.echosting.cafe24.com/skin/base/common/ico_square2.gif) no-repeat 4px 7px; }
+.regularDeliveryPayInfo .ec-base-tooltip { top:90px; right:25px; }
+.regularDeliveryPayInfo .ec-base-tooltip p + p { margin:10px 0 0; }
+.regularDeliveryPayInfo ul.cardList { display: flex; flex-direction: column; gap:10px; margin-top:0; }
+.regularDeliveryPayInfo ul.cardList li.status .type,
+.regularDeliveryPayInfo ul.cardList li.status span { color:#353535; }
+.regularDeliveryPayInfo ul.cardList li.status span { font-weight:normal; }
+.regularDeliveryPayInfo ul.cardList li.status { background:none; display: flex; align-items: center; gap:16px;}
+.regularDeliveryPayInfo ul.cardList .cardInfo .cardNumber,
+.regularDeliveryPayInfo ul.cardList .cardInfo .payMethod { margin:0 0 0 16px; }
+.regularDeliveryPayInfo ul.cardList .button { padding:0; min-width: 192px; }
+.regularDeliveryPayInfo ul.cardList.registed .status { justify-content: space-between; }

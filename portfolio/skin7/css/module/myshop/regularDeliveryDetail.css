@@ -1,0 +1,42 @@
+.xans-myshop-orderregularmanagedetailregister .ec-base-table td.status span { font-weight:bold; color:#C12C20; }
+.xans-myshop-orderregularmanagedetailregister .ec-base-table td.status .payMethod { margin-bottom:4px; }
+
+.xans-myshop-orderregularmanagedetaillist h3.title { margin:60px 0 0; }
+.xans-myshop-orderregularmanagedetaillist .badge { display:inline-block; height:18px; margin:4px 0 0; padding:0 8px; border-radius:10px; line-height:18px; font-size:12px; font-family:"돋움","Dotum"; color:#fff; background-color:#009ffa; }
+.xans-myshop-orderregularmanagedetaillist .icoDown { display:inline-block; position:relative; top:1px; overflow:hidden; width:12px; height:12px; border-radius:50%; line-height:10px; text-indent:-9999px; }
+.xans-myshop-orderregularmanagedetaillist .icoDown:before { content:""; display:inline-block; position:absolute; top:3px; left:5px; width:4px; height:4px; background-color:#fff; }
+.xans-myshop-orderregularmanagedetaillist .icoDown:after { content:""; display:inline-block; position:absolute; bottom:1px; left:3px; width:0; height:0; border-left:4px solid transparent; border-right:4px solid transparent; border-top:4px solid #fff; }
+.xans-myshop-orderregularmanagedetaillist .datepicker { position:relative; width:120px; }
+.xans-myshop-orderregularmanagedetaillist .datepicker .fText.hasDatepicker { width:84px; margin:0 2px 0 0; }
+.xans-myshop-orderregularmanagedetaillist .datepicker .rotation { width:130px; margin:4px 0 0 -5px; text-align:center; }
+.xans-myshop-orderregularmanagedetaillist .datepicker .rotation .txtLess { font-size:11px; color:#828282; }
+.xans-myshop-orderregularmanagedetaillist ul.info { margin:30px 0 0; }
+.xans-myshop-orderregularmanagedetaillist ul.info > li { position:relative; margin:10px 0; padding:0 0 0 10px; color:#757575; }
+.xans-myshop-orderregularmanagedetaillist ul.info > li:before { content:""; display:inline-block; position:absolute; top:6px; left:0; width:4px; height:4px; border-radius:50%; background-color:#757575; }
+.xans-myshop-orderregularmanagedetaillist .ec-base-button { margin:10px 0 0; }
+.xans-myshop-orderregularmanagedetaillist h3.title + .ec-base-button { margin:-30px 0 0; }
+.xans-myshop-orderregularmanagedetaillist .ec-base-table td > .btnNormal + .btnNormal { margin-top:4px; }
+.xans-myshop-orderregularmanagedetaillist a[class^='btnNormal'] + a[class^='btnNormal'] { margin-top:4px; }
+.xans-myshop-orderregularmanagedetaillist .ec-base-table td.product ul.optionGroup > li { margin: 9px 0 0; color: #757575; line-height: 16px; }
+.xans-myshop-orderregularmanagedetaillist .ec-base-table td.product ul.optionGroup > li > strong { display: block; color: #353535; }
+
+/* 옵션변경 레이어 추가 */
+.optionModify { display:none; width:450px; color:#707070; }
+.optionModify .prdInfo { margin:0 0 10px; padding:0 0 10px; border-bottom:1px dotted #b0b1b3; line-height:1.5; }
+.optionModify .prdInfo li { color:#353535; font-weight:bold; }
+.optionModify .prdInfo li.option { color:#707070; font-weight:normal; }
+.optionModify .prdModify h4 { color:#353535; font-size:12px; }
+.optionModify .prdModify li { padding:6px 0 0; }
+.optionModify .prdModify li:after { content:""; display:block; clear:both; }
+.optionModify .prdModify li span { float:left; width:110px; margin:3px 0 0; }
+.optionModify .prdModify li select { float:right; width:294px; line-height:24px; font-size:12px; }
+.optionModify .prdModify li input[type=text] { float:right; width:284px; }
+
+.xans-myshop-orderregularmanagedetailregister .cardList { display: flex; flex-direction: column; gap:10px; width:440px; }
+.xans-myshop-orderregularmanagedetailregister .cardList li.status .type,
+.xans-myshop-orderregularmanagedetailregister .cardList li.status span { color:#353535; }
+.xans-myshop-orderregularmanagedetailregister .cardList li.status span { font-weight:normal; }
+.xans-myshop-orderregularmanagedetailregister .cardList li.status { background:none; display: flex; align-items: center; gap:16px;}
+.xans-myshop-orderregularmanagedetailregister .cardList .cardInfo .cardNumber { margin:0 0 0 16px; }
+.xans-myshop-orderregularmanagedetailregister .cardList .button { padding:0; min-width: 140px; }
+.xans-myshop-orderregularmanagedetailregister .cardList.registed li.status { justify-content: space-between; }

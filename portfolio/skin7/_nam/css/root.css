@@ -1,0 +1,14 @@
+:root {
+    --color-bg: #151617;
+    --color-text: #ffffff;
+    --color-primary: #AC3131;
+    --color-line: #555;
+    --area-max-width: 1200rem;
+    --border-radius-normal: 15rem;
+}
+
+@media all and (max-width:660px) {
+    :root {
+        --border-radius-normal: 8rem;
+    }
+}

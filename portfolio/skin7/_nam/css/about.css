@@ -1,0 +1,13 @@
+#about {}
+.about__content {display: flex;gap: 100rem;}
+.about__image {width: 50%;border-radius: var(--border-radius-normal);overflow: hidden;}
+.about__image > img {width: 100%;}
+.about__text {width: 50%;}
+.about__text > p {margin-bottom: 30rem ;font-size: 17rem; line-height: 1.77;word-break: keep-all;}
+
+@media all and (max-width:1023px) {
+    .about__content {flex-direction: column;gap: 40rem;}
+    .about__image {width: 100%;}
+    .about__text {width: 100%;}
+    .about__text > p {margin-bottom: 20rem;;font-size: 14rem;}
+}

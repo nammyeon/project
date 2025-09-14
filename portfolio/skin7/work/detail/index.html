@@ -1,0 +1,56 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<div id="workDetail" class="area-wrap">
+    <h2 class="page-title">
+        <span class="back">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+            </svg>
+        </span>
+        Work
+    </h2>
+
+    <div class="workDetail__head" module="product_detail">
+        <figure class="workDetail__head-thmb"><img src="{$big_img}" alt="{$seo_alt_tag}" /></figure>
+        <div class="workDetail__head-info">
+            <h3 class="workDetail__head-info-title">{$simple_desc}</h3>
+            <div class="workDetail__head-info-cont">
+                <ul>
+                    <li>
+                        <p>진행일자</p>
+                        <p>{$custom_option1}</p>
+                    </li>
+                    <li>
+                        <p>타입</p>
+                        <p>{$custom_option2}</p>
+                    </li>
+                    <li>
+                        <p>작업참여</p>
+                        <p>{$custom_option3}</p>
+                    </li>
+                </ul>
+
+                <div class="buttons">
+                    <a class="btn-normal" href="{$summary_desc|striptag}" target="_blank">
+                        사이트 바로가기
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                        </span>
+                    </a>
+                    <a class="btn-normal btn-normal--gray" href="{$prd_model|striptag}" target="_blank">
+                        프로젝트 기술서
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="workDetail__content" module="product_additional">{$product_detail}</div>
+</div>
