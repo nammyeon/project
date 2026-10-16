@@ -1,0 +1,3 @@
+# GitHub Pages 설정: portfolio 폴더(Cafe24 서버 경로를 가리키는 링크 포함)는 빌드/공개에서 제외
+exclude:
+  - portfolio
