@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#f8f0fc">
+<title>왁뿌볼 | 말랑 놀이터</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="css/common.css">
+</head>
+<body class="play-page play-page--wakpu">
+<div class="play">
+  <header class="play__top">
+    <a href="index.html" class="play__back" aria-label="목록으로">
+      <svg class="play__back-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+    </a>
+    <h1 class="play__title">왁뿌볼</h1>
+    <button type="button" class="play__btn play__btn--sound" aria-label="소리 끄기">🔊</button>
+    <button type="button" class="play__btn play__btn--reset">다시하기</button>
+  </header>
+  <main class="play__stage">
+    <canvas class="play__canvas"></canvas>
+    <p class="play__hint">공을 톡톡 눌러서 왁스를 깨보세요</p>
+    <div class="play__info">
+      <span class="play__info-bar"><i class="play__info-fill"></i></span>
+      <span class="play__info-text">0%</span>
+    </div>
+  </main>
+</div>
+<script src="js/common.js"></script>
+<script src="js/sound.js"></script>
+<script src="js/wakpu.js"></script>
+</body>
+</html>

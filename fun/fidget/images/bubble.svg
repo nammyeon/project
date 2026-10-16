@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="dome" cx="34%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#fff" stop-opacity=".9"/>
+      <stop offset=".35" stop-color="#eef7ff" stop-opacity=".5"/>
+      <stop offset=".8" stop-color="#bcd6ee" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#8cb2d6" stop-opacity=".75"/>
+    </radialGradient>
+    <g id="b">
+      <circle cx="3" cy="5" r="22" fill="#28466e" opacity=".14"/>
+      <circle r="21" fill="url(#dome)" stroke="#fff" stroke-opacity=".85" stroke-width="1.4"/>
+      <ellipse cx="-7" cy="-9" rx="6" ry="3.4" transform="rotate(-40 -7 -9)" fill="#fff"/>
+      <circle cx="8" cy="9" r="1.6" fill="#fff" opacity=".6"/>
+    </g>
+    <g id="p">
+      <path d="M-17 -6 L-9 -17 L4 -18 L16 -9 L18 5 L10 16 L-4 18 L-15 10 Z" fill="#fff" fill-opacity=".14" stroke="#fff" stroke-opacity=".65"/>
+      <path d="M-8 -6 L0 -2 L6 -8 M-4 6 L4 4 L9 10 M-12 2 L-6 0" fill="none" stroke="#fff" stroke-opacity=".6" stroke-linecap="round"/>
+    </g>
+  </defs>
+  <rect x="18" y="26" width="164" height="150" rx="14" fill="#fff" fill-opacity=".35" stroke="#fff" stroke-opacity=".8" stroke-width="2"/>
+  <use href="#b" x="48" y="60"/>
+  <use href="#b" x="100" y="60"/>
+  <use href="#b" x="152" y="60"/>
+  <use href="#b" x="74" y="102"/>
+  <use href="#p" x="126" y="102"/>
+  <use href="#b" x="48" y="144"/>
+  <use href="#p" x="100" y="144"/>
+  <use href="#b" x="152" y="144"/>
+  <g stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".95">
+    <path d="M126 72 L126 66"/><path d="M150 94 L156 91"/><path d="M150 116 L156 120"/>
+    <path d="M102 116 L96 120"/><path d="M102 90 L96 86"/>
+  </g>
+</svg>
