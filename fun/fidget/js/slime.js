@@ -58,7 +58,6 @@ const slimeCode = {
     this.initGL();
     this.bindEvents();
     this.resize();
-    this.build();
     requestAnimationFrame(t => this.loop(t));
   },
 
@@ -80,6 +79,8 @@ const slimeCode = {
     this.h = s.h;
     this.dpr = s.dpr;
     if (this.gl) this.resizeGL();
+    // 화면 크기가 잡힌 뒤에 슬라임을 만듦 (탭이 뒤에서 열리면 처음엔 크기가 0일 수 있음)
+    if (!this.nv && this.w > 50 && this.h > 50) this.build();
   },
 
   // ===== 메시 만들기: 가운데 점 + 동심원 고리(k번째 고리에 6k개), 고리 사이를 지퍼처럼 삼각형으로 엮음 =====
@@ -227,7 +228,7 @@ const slimeCode = {
   },
 
   onDown(e) {
-    if (this.pointer) return;
+    if (this.pointer || !this.nv) return;
     const p = commonCode.pos(e, this.canvas);
     // 부풀어 있는 바풍을 누르면 팡
     const b = this.balloonAt(p.x, p.y);
@@ -374,6 +375,12 @@ const slimeCode = {
   loop(t) {
     const dt = Math.min(0.05, (t - (this.lastTime || t)) / 1000);
     this.lastTime = t;
+    if (!this.nv) {
+      // 아직 크기가 0이면 다시 재봄
+      this.resize();
+      requestAnimationFrame(tt => this.loop(tt));
+      return;
+    }
     this.update(dt);
     this.stepAcc += dt;
     let steps = 0;
